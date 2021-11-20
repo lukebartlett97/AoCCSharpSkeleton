@@ -9,7 +9,7 @@ To do your own solution, grab the problem text, example data, and actual data fr
 You can put them anywhere, however I prefer /Resources/Year[YEAR]/Day[DAY]/.
 
 Then, create a new class (I put it in a matching folder structure as the resources) which inherites from SolutionMain.
-SolutionMain will get you to implement a Solve(List<String>) method. This is where you can put your solution, returning your String answer.
+SolutionMain will get you to implement a Solve(List String) method. This is where you can put your solution, returning your String answer.
 You will also need to create a constructor which calls SolutionMains constructor, setting the resource path. E.g. "Year2019/Day1/"
 SolutionMain gives you access to several helper methods, including:
  - ConvertToIntegerList
