@@ -8,8 +8,8 @@ namespace AoCCSharpSkeleton.Solutions
 {
     abstract class SolutionMain
     {
-        private String ResourcePath;
-        readonly string RunningPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+        private readonly String ResourcePath;
+        private readonly string RunningPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
 
         public bool Verbose = true;
 
@@ -75,19 +75,19 @@ namespace AoCCSharpSkeleton.Solutions
             Console.WriteLine(message + (total / runs) + " milliseconds");
         }
 
-        protected List<String> GetData()
+        private List<String> GetData()
         {
             var path = Path.GetFullPath(Path.Combine(RunningPath, "resources", ResourcePath, "data.txt"));
             return ReadFile(path);
         }
 
-        protected List<String> GetExample()
+        private List<String> GetExample()
         {
             var path = Path.GetFullPath(Path.Combine(RunningPath, "resources", ResourcePath, "example.txt"));
             return ReadFile(path);
         }
 
-        protected List<String> GetProblem()
+        private List<String> GetProblem()
         {
             var path = Path.GetFullPath(Path.Combine(RunningPath, "resources", ResourcePath, "problem.txt"));
             return ReadFile(path);
