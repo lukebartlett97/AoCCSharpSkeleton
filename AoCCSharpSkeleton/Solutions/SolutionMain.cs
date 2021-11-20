@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace AoCCSharpSkeleton.Solutions
 {
@@ -18,6 +17,8 @@ namespace AoCCSharpSkeleton.Solutions
         {
             ResourcePath = resourcePath;
         }
+
+        protected abstract String Solve(List<String> data);
 
         public void PrintSolution(bool verbose) {
             Verbose = verbose;
@@ -73,8 +74,6 @@ namespace AoCCSharpSkeleton.Solutions
             double total = times.Sum();
             Console.WriteLine(message + (total / runs) + " milliseconds");
         }
-
-        protected abstract String Solve(List<String> data);
 
         protected List<String> GetData()
         {

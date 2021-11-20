@@ -1,4 +1,4 @@
-﻿using AoCCSharpSkeleton.Solutions.Year2019.Day1;
+﻿using AoCCSharpSkeleton.Solutions;
 
 namespace AoCCSharpSkeleton
 {

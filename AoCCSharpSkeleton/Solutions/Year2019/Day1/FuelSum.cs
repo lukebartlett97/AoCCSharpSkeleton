@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace AoCCSharpSkeleton.Solutions.Year2019.Day1
+namespace AoCCSharpSkeleton.Solutions
 {
     class FuelSum : SolutionMain
     {
