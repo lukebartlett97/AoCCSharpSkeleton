@@ -41,7 +41,7 @@ namespace AoCCSharpSkeleton.Solutions
             PrintSolution(exampleData);
         }
 
-        public void PrintSolution(List<String> data) {
+        private void PrintSolution(List<String> data) {
             Console.WriteLine(String.Join(", ", data));
             Console.WriteLine("Solution:");
             Console.WriteLine(Solve(data));
@@ -60,7 +60,7 @@ namespace AoCCSharpSkeleton.Solutions
             TimeSolution(GetData(), runs, "Average time taken after " + runs + " runs: ");
         }
 
-        public void TimeSolution(List<String> data, int runs, String message) {
+        private void TimeSolution(List<String> data, int runs, String message) {
             List<double> times = new List<double>();
             for (int i = 0; i < runs; i++)
             {
@@ -97,11 +97,6 @@ namespace AoCCSharpSkeleton.Solutions
         private List<String> ReadFile(string file)
         {
             return File.ReadAllLines(file).ToList();
-        }
-
-        public void SetResourcePath(String resourcePath)
-        {
-            ResourcePath = resourcePath;
         }
 
         protected List<int> ConvertToIntegerList(List<String> strings)
