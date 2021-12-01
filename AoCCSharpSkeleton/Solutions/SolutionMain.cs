@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
-namespace AoCCSharpSkeleton.Solutions
+namespace AdventOfCode.Solutions
 {
     abstract class SolutionMain
     {

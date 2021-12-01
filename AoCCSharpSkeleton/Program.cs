@@ -1,6 +1,6 @@
-﻿using AoCCSharpSkeleton.Solutions;
+﻿using AdventOfCode.Solutions;
 
-namespace AoCCSharpSkeleton
+namespace AdventOfCode
 {
     class Program
     {

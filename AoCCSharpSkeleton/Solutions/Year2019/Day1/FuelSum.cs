@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AoCCSharpSkeleton.Solutions
+namespace AdventOfCode.Solutions
 {
     class FuelSum : SolutionMain
     {
